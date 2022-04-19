@@ -285,9 +285,9 @@ width: 100%;
 	background-color: #ccc;
 }
 
-.row .contact-content{
-	margin-top: 48px;
-}
+/* .row .contact-content{
+	padding-top: 48px;
+} */
 .contact-info{
 	font-size: 18px;
 	line-height: 1.5;
