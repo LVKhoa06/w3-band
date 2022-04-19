@@ -11,6 +11,26 @@ html {
 
 /* Comon */
 
+.bull-right{
+	float: right !important;
+}
+
+.btn{
+	color: #fff;
+	background-color: black;
+	text-decoration: none;
+	padding: 10px 14px;
+	display: inline-block;
+	margin-top: 15px;
+	border-radius: 2px;
+	border: none;
+}
+.btn:hover{
+	cursor: pointer;
+	color: black;
+	background-color: #ccc;
+}
+
 .row{
 	margin-left: -8px;
 	margin-right: -8px;
@@ -52,9 +72,7 @@ width: 100%;
 	clear: both;
 }
 /* ...........end ........*/
-#big {
 
-}
 /*.............Header...........*/
 #header  {
     height: 46px;
@@ -167,12 +185,10 @@ width: 100%;
 /* .............End Slider........... */
 
 /* ............Content............ */
-#content {
 
-}
 #content .content-section{
 	width: 800px;
-	padding: 64px 0;
+	padding: 64px 0 110px;
 	margin-left: auto;
 	margin-right: auto;
 }
@@ -197,6 +213,7 @@ width: 100%;
 }
 #content .members-list{
 	margin-top: 46px ;
+	display: flex;
 }
 #content .member-name{
 	font-size: 15px;
@@ -207,7 +224,6 @@ width: 100%;
 	border-radius: 5px;
 }
  #content .tour{ 
-	margin-top: 116px;
 	background-color: black;
 	font-weight: 450;
 } 
@@ -245,7 +261,6 @@ width: 100%;
 }
 .place-list{
 	margin-top: 32px ;
-	margin-bottom: 48px;
 }
 .place-img{
 	width: 100%;
@@ -272,19 +287,6 @@ width: 100%;
 	margin-top: 15px;
 	line-height: 1.4;
 }
-.blace-buy{
-	color: #fff;
-	background-color: black;
-	text-decoration: none;
-	padding: 10px 14px;
-	display: inline-block;
-	margin-top: 15px;
-}
-.blace-buy:hover{
-	color: black;
-	background-color: #ccc;
-}
-
 /* .row .contact-content{
 	padding-top: 48px;
 } */
@@ -298,16 +300,39 @@ width: 100%;
 	display: inline-block;
 }
 
-.contact-form{
-
-}
-
 .contact-form .form-control{
 	padding: 11px;
 	border: 1px solid #ccc;
 	width: 100%;
 }
 
-#footer {
+.row.contact-content{
+	padding-top: 32px;
+}
 
+#footer {
+	padding: 64px 16px;
+	text-align: center;
+}
+
+#footer .social{
+	font-size: 22px;
+}
+
+#footer .social a{
+	color: rgba( 0, 0, 0, 0.6);
+	text-decoration: none;
+}
+
+#footer .social a:hover{
+	color: rgba( 0, 0, 0, 0.4);
+}
+
+#footer .copy-right{
+	margin-top: 15px;
+	color: rgba( 0, 0, 0, 0.6);
+}
+
+#footer .copy-right a{
+	color: rgba( 0, 0, 0, 0.6);
 }
