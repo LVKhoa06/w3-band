@@ -6,6 +6,7 @@
 }
 /* --------Style--------- */
 html {
+	scroll-behavior: smooth;
 	font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
@@ -70,6 +71,10 @@ width: 100%;
 }
 .clear{
 	clear: both;
+}
+
+:root{
+	--my-color:  rgb(75, 178, 242)
 }
 /* ...........end ........*/
 
@@ -335,4 +340,91 @@ width: 100%;
 
 #footer .copy-right a{
 	color: rgba( 0, 0, 0, 0.6);
+}
+
+.modal{
+	position: fixed;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	background-color: rgba( 0, 0, 0, 0.3);
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.modal-container{
+	background: #fff;
+	width: 800px;
+	max-width: calc(100%-32px);
+	min-height: 200px;
+	position: relative;
+
+}
+
+.modal-header {
+    background: var(--my-color);
+	height: 130px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	font-size: 30px;
+	color: #fff;
+}
+
+.modal-close{
+	position: absolute;
+	right: 0;
+	color: #fff;
+	padding: 11px;
+	cursor: pointer;
+	opacity: 0.8;
+}
+
+.modal-close:hover{
+	opacity: 1;
+}
+
+.modal-body{
+	padding: 16px;
+}
+
+.modal-label{
+	display: block;
+	font-size: 15px;
+	margin-bottom: 12px;
+}
+
+.modal-input{
+	border: 1px solid #ccc;
+	width: 100%;
+	padding: 10px;
+	font-size: 15px;
+	margin-bottom: 20px;
+}
+
+#buy-tickets{
+	background: var(--my-color);
+	color: #fff;
+	font-size: 15px;
+	text-transform: uppercase;
+	padding: 15px;
+	width: 100%;
+	display: block;
+	text-align: center;
+	cursor: pointer;
+}
+
+#buy-tickets:hover{
+	opacity: 0.8;
+}
+
+.modal-help{
+	font-size: 15px;
+	text-align: right;
+}
+
+.modal-help>a{
+	color: var(--my-color);
 }
