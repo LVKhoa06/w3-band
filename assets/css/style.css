@@ -349,9 +349,12 @@ width: 100%;
 	left: 0;
 	right: 0;
 	background-color: rgba( 0, 0, 0, 0.3);
-	display: flex;
 	align-items: center;
 	justify-content: center;
+	display: none;
+}
+.open{
+	display:flex;
 }
 
 .modal-container{
@@ -360,7 +363,7 @@ width: 100%;
 	max-width: calc(100%-32px);
 	min-height: 200px;
 	position: relative;
-
+	animation: modalFadeIn ease	.4s;
 }
 
 .modal-header {
@@ -423,8 +426,21 @@ width: 100%;
 .modal-help{
 	font-size: 15px;
 	text-align: right;
+	padding-bottom: 16px;
+    padding-right: 16px;
 }
 
 .modal-help>a{
 	color: var(--my-color);
+}
+
+@keyframes modalFadeIn {
+	from {
+		opacity: 0;
+		transform: translateY(-140px);
+	}
+	to{
+		opacity: 1;
+		transform: translateY(0);
+	}
 }
