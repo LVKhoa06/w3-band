@@ -2,6 +2,7 @@
     <head>
         <meta charset="UTF-8" >
         <title>W3.band.k</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="assets/css/style.css">
         <link rel="stylesheet" href="assets/icon/themify-icons/themify-icons.css">
         <link rel="icon" href="https://www.w3schools.com/favicon.ico"/>
@@ -9,12 +10,11 @@
     <body> 
         
         <div id="big">
-
             <div id="header">
                 <ul id="nav">
                     <li><a href="#">Home</a></li>
                     <li><a href="#band">Band</a></li>
-                    <li><a href="#tour#">Tour</a></li>
+                    <li><a href="#tour1">Tour</a></li>
                     <li><a href="#contact">Contact</a></li>
                     <li>
                          <a href="#">
@@ -30,6 +30,10 @@
                 </ul>
                 <div class="search-buton"> 
                     <i class="search-icon ti-search"></i>
+                </div>
+
+                <div id="mobile-menu-button" class="mobile-menu-btn">
+                    <i class="ti-menu"></i>
                 </div>
             </div>
 
@@ -63,7 +67,7 @@
                         </div>
                     </div>                
                 </div>
-                <div id="tour#" class="tour">
+                <div id="tour1" class="tour">
                     <div class=" content-section">
                         <h2 class="section-heading ">TOUR DATES</h2>
                         <p class="section-sub-heading ">Remember to book your tickets!</p>
@@ -216,6 +220,38 @@
             modalContainer.addEventListener('click', function(event){
                event.stopPropagation()
             })
+        </script>
+
+        <script>
+            var header = document .getElementById('header');
+            var mobileMenuButton = document .getElementById('mobile-menu-button');
+            var headerHeight =header.clientHeight;
+
+            console .log (mobileMenuButton)
+            mobileMenuButton.onclick =function(){
+                var isClosed = header.clientHeight === headerHeight;
+                if (isClosed) {
+                    header .style.height = 'auto';
+                } else {
+                    header .style.height = null;
+                }
+            }
+
+            var menuItems = document .querySelectorAll('#nav li a[href*="#"]');
+            for (var i = 0; i < menuItems.length; i++){
+                var menuItem = menuItems[i];
+                
+                menuItem.onclick = function(event) {
+                    var isParentMenu = this.nextElementSibling && this.nextElementSibling.classList.contains('subnav'); 
+                    if (isParentMenu) {
+                        event.preventDefault();
+                    } else{
+                        header.style.height = null;
+                    }
+                    // header.style.height = null;
+
+                }
+            }       
         </script>
         
     </body>
