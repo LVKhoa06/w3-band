@@ -474,7 +474,8 @@ width: 100%;
 	#header .mobile-menu-btn{
 		color: #fff;
 		font-size: 20px;
-		padding: 12px 20px;
+		padding: 13px 20px;
+		display: block;
 	}
 
 	#nav{
@@ -509,11 +510,53 @@ width: 100%;
 		color: #fff;
 	}
 
-	#header .mobile-menu-btn{
-		display: block;
+	.col{
+		padding-left: 0;
+		padding-right: 0;
 	}
 
-	
+	.col-three{
+		width: 100%;
+		padding-bottom: 16px;
+	}
+
+	.contact-form .form-control {
+		padding: 18px;
+		margin-top: 10px;
+	}
+
+	.tiket{
+		margin-bottom: 16px;
+	}
+
+	.row .mt-8{
+		margin-top: 0 !important;
+	}
+
+	.btn {
+		padding: 16px 28px;
+	}
+
+	.row{
+		margin: 0;
+	}
+
+	.col-full{
+		padding: 0;
+	}
+
+	.col .col-two .contact-form{
+		width: 100%;
+		
+	}
+
+	.col .col-two{
+		width: 100%;
+	}
+
+	.col-two{
+		display: contents;
+	}
 
 	
 }
