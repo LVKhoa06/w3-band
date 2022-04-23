@@ -185,13 +185,13 @@ width: 100%;
 		position: absolute;
 		color: #fff;
 		bottom: 0;
-	}
-	#slider .text-content{
 		position: absolute;
 		bottom: 47px;
 		text-align: center; 
 		width: 100%;
+		text-shadow: 0 0 4px #000;
 	}
+	
 	#slider .text-heading{
 		font-weight: 500;
 		font-size: 24px;
@@ -242,7 +242,7 @@ width: 100%;
 #content .name-avt{
 	width: 154px;
 	margin-top: 15px;
-	border-radius: 5px;
+	border-radius: 10px;
 }
  #content .tour{ 
 	background-color: black;
@@ -329,6 +329,7 @@ width: 100%;
 
 .row.contact-content{
 	padding-top: 32px;
+	line-height: 1.7;
 }
 
 #footer {
@@ -371,6 +372,7 @@ width: 100%;
 }
 .open{
 	display:flex;
+	padding: 17px;
 }
 
 .modal-container{
@@ -523,6 +525,7 @@ width: 100%;
 	.contact-form .form-control {
 		padding: 18px;
 		margin-top: 10px;
+		font-size: 16px;
 	}
 
 	.tiket{
@@ -535,6 +538,7 @@ width: 100%;
 
 	.btn {
 		padding: 16px 28px;
+		width: 100%;
 	}
 
 	.row{
@@ -558,10 +562,41 @@ width: 100%;
 		display: contents;
 	}
 
-	
+	#content .members-list{
+		flex-direction: column;
+	}
+
+	#footer .social{
+		font-size: 30px;
+	}
+
+	#footer .copy-right{
+		font-size: 20px;
+		margin-top: 20px;
+	}
+
+	.social a i{
+		margin: 0 3px;
+	}
+
+	.ct{
+		line-height: 2;
+	}
+
 }
 
 /* ........Table..........	 */
 @media (min-width: 46.25em) and (max-width: 63.9375em){
+	#footer .social{
+		font-size: 30px;
+	}
 
+	#footer .copy-right{
+		font-size: 20px;
+		margin-top: 20px;
+	}
+
+	.social a i{
+		margin: 0 3px;
+	}
 }
