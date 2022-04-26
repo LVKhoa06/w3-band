@@ -372,7 +372,7 @@ width: 100%;
 }
 .open{
 	display:flex;
-	padding: 17px;
+	padding: 16px;
 }
 
 .modal-container{
@@ -382,6 +382,7 @@ width: 100%;
 	min-height: 200px;
 	position: relative;
 	animation: modalFadeIn ease	.4s;
+	border-radius: 8px;
 }
 
 .modal-header {
@@ -392,6 +393,7 @@ width: 100%;
 	justify-content: center;
 	font-size: 30px;
 	color: #fff;
+	border-radius: 7px;
 }
 
 .modal-close{
@@ -435,6 +437,7 @@ width: 100%;
 	display: block;
 	text-align: center;
 	cursor: pointer;
+	border-radius: 2px;
 }
 
 #buy-tickets:hover{
@@ -542,7 +545,8 @@ width: 100%;
 	}
 
 	.row{
-		margin: 0;
+		margin: 16px 0 0 0 ;
+		
 	}
 
 	.col-full{
